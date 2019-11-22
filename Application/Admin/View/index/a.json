@@ -1,0 +1,50 @@
+{
+  "status": 200
+  ,"message": ""
+  ,"total": 8
+  ,"rows": {
+    "item": [{
+      "id": "10001"
+      ,"title": "杜甫"
+      ,"add_time": "xianxin@layui.com"
+      ,"time": "男"
+      ,"start_time": "浙江杭州"
+      ,"end_time": "点击此处，显示更多。当内容超出时，点击单元格会自动显示更多内容。"
+      ,"price_total": "116"
+      ,"price_month": "192.168.0.8"
+      ,"u_A_id": "108"
+      ,"u_B_id": "2016-10-14"
+      ,"house_id": "2016-10-14"
+      ,"note": "2016-10-14"
+      ,"rent_status": "2016-10-14"
+    },{
+      "id": "10001"
+      ,"title": "杜甫"
+      ,"add_time": "xianxin@layui.com"
+      ,"time": "男"
+      ,"start_time": "浙江杭州"
+      ,"end_time": "点击此处，显示更多。当内容超出时，点击单元格会自动显示更多内容。"
+      ,"price_total": "2000"
+      ,"price_month": "123.238.323.233"
+      ,"u_A_id": "108"
+      ,"u_B_id": "2016-10-14"
+      ,"house_id": "2014-10-14"
+      ,"note": "2016-10-14"
+      ,"rent_status": "2016-10-14"
+    },{
+      "id": "10001"
+      ,"title": "杜甫"
+      ,"add_time": "xianxin@layui.com"
+      ,"time": "男"
+      ,"start_time": "浙江杭州"
+      ,"end_time": "点击此处，显示更多。当内容超出时，点击单元格会自动显示更多内容。"
+      ,"price_total": "2000"
+      ,"price_month": "123.238.323.233"
+      ,"u_A_id": "108"
+      ,"u_B_id": "2016-10-14"
+      ,"house_id": "2020-10-14"
+      ,"note": "2016-10-14"
+      ,"rent_status": "2016-10-14"
+    }]
+  }
+}  

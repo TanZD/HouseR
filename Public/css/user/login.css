@@ -1,0 +1,169 @@
+@charset "utf-8";
+html,body{
+	margin:0px;
+	padding:0px;
+}
+
+.bd{
+	position:absolute;
+	top:0px;
+	right:0px;
+	left:0px;
+/*	bottom: 0px;*/
+	background-color:#fff;
+	background:url('../../images/login.jpg') no-repeat center;
+	background-size:cover; 
+}
+
+.login-container {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: url('../../images/login.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.register{
+	border-radius: 5px;
+	margin:80px auto;
+	width:600px;
+	/*height:600px;*/
+	border:1px solid #ddd;
+	background-color:#ffffffe0;
+	font-size:20px;
+	box-shadow: 0px 1px 10px 7px #d8d8cb;
+}
+
+.login{
+	border-radius: 5px;
+	margin:80px auto;
+	width:500px;
+	/*height:600px;*/
+	border:1px solid #ddd;
+	background-color:#ffffffe0;
+	font-size:20px;
+	box-shadow: 0px 1px 10px 7px #d8d8cb;
+}
+.breath_c{
+	 /* IE10、Firefox and Opera，IE9以及更早的版本不支持 */
+    animation-name: breath;                         /* 动画名称 */
+    animation-duration: 5s;                         /* 动画时长3秒 */
+    animation-timing-function: ease-in-out;         /* 动画速度曲线：以低速开始和结束 */
+    animation-iteration-count: infinite;            /* 播放次数：无限 */
+ 
+    /* Safari and Chrome */
+    -webkit-animation-name: breath;                 /* 动画名称 */
+    -webkit-animation-duration: 5s;                 /* 动画时长3秒 */
+    -webkit-animation-timing-function: ease-in-out; /* 动画速度曲线：以低速开始和结束 */
+    -webkit-animation-iteration-count: infinite;    /* 播放次数：无限 */
+}
+
+@keyframes breath {
+    from { opacity: 0.8; }                          /* 动画开始时的不透明度 */
+    50%  { opacity:   1; }                          /* 动画50% 时的不透明度 */
+    to   { opacity: 0.8; }                          /* 动画结束时的不透明度 */    
+}
+ 
+@-webkit-keyframes breath {
+    from { opacity: 0.8; }                          /* 动画开始时的不透明度 */
+    50%  { opacity:   1; }                          /* 动画50% 时的不透明度 */
+    to   { opacity: 0.8; }                          /* 动画结束时的不透明度 */
+}
+.login_title{
+	/*width:500px;
+	height:128px;*/
+	cursor: default;
+	border:0px solid #ddd;
+	line-height:128px;
+	position:relative;
+	text-align:center;
+	font-size:35px;
+}
+.register_title{
+	width:600px;
+	height:100px;
+	border:0px solid #ddd;
+	line-height:128px;
+	position:relative;
+	text-align:center;
+	font-size:35px;
+	cursor: default;
+}
+
+.input{
+	height:50px;
+	
+}
+
+.input2{
+	width:200px;
+}
+.border{
+	border:border:1px solid #ddd;
+}
+
+.center{
+	
+	margin-left:80px;
+	margin-right:80px;
+}
+.info{
+	text-align: center;
+	padding-top:2px;
+	height:25px;
+	border:0px solid red;
+}
+.info2{
+	/*margin-left:120px;*/
+	font-size:20px;
+	text-align: center;
+	cursor: default;
+}
+.input-group-addon i{
+	width: 18px;
+	height: 18px;
+}
+.reg{
+	
+	border:0px solid red;
+	width:50px;
+	height:50px;
+	margin-top:20px;
+}
+span{
+	font-size:14px;
+	color:red;
+	
+}
+.layui-form-item input{
+	line-height: 50px;
+	height: 50px;
+}
+.layui-form-item label{
+	height: 50px!important;
+	line-height: 60px;
+}
+.info3{
+	/*margin-left:120px;*/
+	line-height:60px;
+	height: 60px;
+	font-size:15px;
+	color: red;
+	text-align: center;
+	cursor: default;
+}
+.verify-code{
+	box-sizing: border-box!important;
+	height: 50px!important;
+}
+.verify-code-area{
+	margin-left: 20px;
+}
+.verify-change-code{
+	line-height: 50px!important;
+}
+.btn{
+	background-color: #0e9ada!important;
+	width: 180px;
+	text-align: center;
+}

@@ -1,0 +1,31 @@
+﻿/* .layui-input-inline select{
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	float:left;width:190px;
+	margin-right:10px;
+	width:auto;
+	margin-left:-1px;
+	display:block;
+	margin:0;
+	top:-1px;
+	clear:both;
+
+	display:block;
+	float:none;
+	left:-3px;
+	width:auto;
+	margin:0 0 10px 112px;
+	border-color:#e6e6e6;
+	width:190px;margin-top:px;border;border-color:#e6e6e6;height:35px;
+} */
+
+.layui-input-inline{position:relative}
+.layui-input-inline{display:inline-block;vertical-align:middle}
+.layui-input-inline{float:left;width:190px;margin-right:10px}
+.layui-input-inline{width:auto}
+.layui-input-inline{margin-left:-1px}
+.layui-input-inline{display:block;margin:0;top:-1px;clear:both}
+.layui-input-inline{margin-left:110px}
+.layui-input-inline{display:block;float:none;left:-3px;width:auto;margin:0 0 10px 112px}
+.layui-input-inline+{margin-left:110px;top:-5px;padding:0}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+	<title>注册</title>
+	<meta charset="uft-8">
+	<!-- <link rel="stylesheet" type="text/css" href="__ADMIN__/bootstrap-3.3.7-dist/css/bootstrap.min.css"/> -->
+	<link rel="stylesheet" type="text/css" href="__INDEX__/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="__INDEX__/css/user/login.css"/><!--引入CSS-->
+ 	<link rel="stylesheet" type="text/css" href="__INDEX__/layui/css/layui.css">
+</head>
+<body>
+<div class="bd">
+	<div class="register breath_c">
+	<div class="register_title">注册</div>
+
+	<form  action="{:U('register')}" class="layui-form layui-form-pane" method="post">
+		<div class="center">
+			<div class="layui-form-item" style="margin-bottom: 0px;">
+				<label class="layui-form-label"><i class="fa fa-user fa-lg" style="line-height: 30px;" ></i></label>
+				<div class="layui-input-block">
+					<input type="text" autocomplete="off" required  lay-verify="required" name="name" id="name" placeholder="用户名"  class="layui-input">
+				</div>
+			</div>
+			<div class="info"><span id="nameError" class="info2"></span></div>
+
+			<div class="layui-form-item" style="margin-bottom: 0px;">
+				<label class="layui-form-label"><i class="fa fa-phone fa-fw" style="line-height: 30px;" ></i>
+				</label>
+				<div class="layui-input-block">
+					<input type="text" autocomplete="off" required  lay-verify="required" name="phone" id="phone" placeholder="电话号码"    class="layui-input">
+				</div>
+			</div>
+			<div class="info"><span id="phoneError" class="info2"></span></div>
+
+
+			<div class="layui-form-item" style="margin-bottom: 0px;">
+				<label class="layui-form-label"><i class="fa fa-lock fa-fw" style="line-height: 30px;" ></i></label>
+				<div class="layui-input-block">
+					<input type="password" autocomplete="off" required  lay-verify="required" name="inputPassword3" id="inputPassword3" placeholder="输入密码"   class="layui-input">
+				</div>
+			</div>
+
+			<div class="info"><span id="passwordError" class="info2"></span>
+			</div>
+
+
+			<div class="layui-form-item" style="margin-bottom: 0px;">
+				<label class="layui-form-label"><i class="fa fa-lock fa-fw" style="line-height: 30px;" ></i></label>
+				<div class="layui-input-block">
+					<input type="password" autocomplete="off" required  lay-verify="required" name="inputPassword2" id="inputPassword2" placeholder="再次输入密码" class="layui-input">
+				</div>
+			</div>
+			<div class="info"><span id="passwordError2" class="info2"></span>
+			</div>
+
+			<div class="layui-form-item" style="margin-bottom: 0px;">
+				<label class="layui-form-label"><i class="fa fa-envelope fa-fw" style="line-height: 30px;" ></i></label>
+				<div class="layui-input-block">
+					<input type="text" autocomplete="off" required  lay-verify="required" name="email" id="email" placeholder="邮箱"  class="layui-input">
+				</div>
+			</div>
+			<div class="info"><span id="mailError" class="info2"></span>
+			</div>
+
+			<div class="layui-form-item" style="margin-bottom: 0px;">
+				<label class="layui-form-label"><i class="fa fa-address-card fa-fw" style="line-height: 30px;" ></i></label>
+				<div class="layui-input-block">
+					<input type="text" autocomplete="off" required  lay-verify="required" name="realName" id="realname" placeholder="真实姓名"   class="layui-input">
+				</div>
+			</div>
+			<div class="info"></div>
+
+			<div class="layui-form-item" style="margin-bottom: 0px;">
+				<label class="layui-form-label"><i class="fa fa-codiepie fa-fw" style="line-height: 30px;" ></i></label>
+				<div class="layui-input-block">
+					<input type="text" autocomplete="off" required  lay-verify="required" name="age" id="age" placeholder="年龄"   class="layui-input">
+				</div>
+			</div>
+			<div class="info"><span id="ageError" class="info2" ></span></div>
+
+			<div class="layui-form-item" >
+				<label class="layui-form-label"><i class="fa fa-intersex fa-lg" style="line-height: 30px;" ></i></label>
+				<div class="layui-input-block" >
+					<select name="sex" lay-verify="required" >
+						<option value="1">男</option>
+						<option value="0">女</option>
+					</select>
+				</div>
+			</div>
+
+			<div align="center">
+				<button style="margin: 30px 0px;" type="submit" class="layui-btn btn layui-btn layui-btn-lg button" id="submit" font-weight="10px" font-size="20px">注册</button>
+			</div>
+		</div>
+	</form>
+</body>
+<script src="__INDEX__/js/jquery.min.js"></script>	
+<script src="__INDEX__/layui/layui.js"></script>
+<script type="text/javascript" src="__INDEX__/js/user/login.js"></script>
+<script type="text/javascript" src="__INDEX__/js/user/registerCheck.js"></script>	
+<script>
+	layui.use('form', function () {
+		var form = layui.form;
+		form.render();
+	});
+</script>
+</html>

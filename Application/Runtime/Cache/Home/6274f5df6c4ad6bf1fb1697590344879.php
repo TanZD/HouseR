@@ -1,0 +1,362 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html class="x-admin-sm">
+
+<head>
+	<meta charset="UTF-8">
+	<title>房屋信息添加</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" >
+ 	<link rel="stylesheet" type="text/css" href="/HouseR/public/css/index.css">
+	<link rel="stylesheet" href="/HouseR/public/admin/css/font.css">
+	<link rel="stylesheet" href="/HouseR/public/css/admin/index.css">
+	<link rel="stylesheet" type="text/css" href="/HouseR/public/layui/css/layui.css">
+</head>
+<body>
+	<div class="header_list" id="header">
+		<ul class="layui-nav" lay-filter="" style="border-radius: 0px;">
+			<li class="header_list_left" style="float: left;"><img onclick="window.location.href='/HouseR/Home/index'" style="width: 100px;" src="/HouseR/public/images/logo.png"></li>
+			<li class="layui-nav-item" style="float: left;">
+				<a href="javascript:;" id="c_city"></a>
+			</li>
+			<li class="layui-nav-item" id="apply_house" style="display: none;"><a href="/HouseR/Home/rent/apply" >我要出租</a></li>
+			<li class="layui-nav-item" style="display: none" id="personControl"><a href="/HouseR/Homepage/index">个人中心<span id="dot" style="display: none;" class="layui-badge-dot"></span></a></li>
+			<li class="layui-nav-item"><a href="" id="userName">登录</a></li>
+			<li class="layui-nav-item"><a href="" id="logout">注册</a></li>
+		</ul>
+	</div>
+	<div class="bd">
+		<form class="layui-form" enctype="multipart/form-data" method="POST" action="<?php echo U('apply_houseImpl');?>"> <!-- 提示：如果你不想用form，你可以换成div等任何一个普通元素 -->
+
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+				<legend>房屋信息添加</legend>
+			</fieldset>
+
+			<div class="layui-form-item">
+				<label class="layui-form-label">标题</label>
+				<div class="layui-input-block">
+					<input lay-verify="required" type="text" name="title" maxlength="50" placeholder="请输入" autocomplete="off" class="layui-input">
+					<input lay-verify="required" type="text" id="host_id" name="host_id" style="display: none;">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">城市</label>
+				<div class="layui-input-block">
+					<select lay-verify="city" name='city' lay-filter="aihao" id="select_city">
+						<option value="-1">请选择</option>
+					</select>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">区域</label>
+				<div class="layui-input-block">
+					<select lay-verify="" name="location" lay-filter="aihao" id="select_location"></select>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label lay-verify="" class="layui-form-label">详细地址</label>
+				<div class="layui-input-block">
+					<input type="text" name="address" maxlength="50" placeholder="请输入" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">装修</label>
+				<div class="layui-input-block">
+					<select lay-verify="" name='decoration' lay-filter="aihao" id="select_city">
+						<option value="1">毛胚</option>
+						<option value="2">普通装修</option>
+						<option value="3">精装修</option>
+					</select>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">范围</label>
+					<div class="layui-input-inline" style="width: 50px;">
+						<input lay-verify="number" min="1" type="number" name="rooms" autocomplete="off" class="layui-input">
+					</div>
+					<div class="layui-form-mid">房</div>
+					<div class="layui-input-inline" style="width: 50px;">
+						<input min="1" type="number" lay-verify="number" name="livingRooms" autocomplete="off" class="layui-input">
+					</div>
+					<div class="layui-form-mid">厅</div>
+					<div class="layui-input-inline" style="width: 50px;">
+						<input lay-verify="number" min="1" type="number" name="bathrooms" autocomplete="off" class="layui-input">
+					</div>
+					<div class="layui-form-mid">卫</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">楼层</label>
+					<div class="layui-input-inline" style="width: 50px;">
+						<input lay-verify="number" min="1" type="number" name="floor" autocomplete="off" class="layui-input">
+					</div>
+					<div class="layui-form-mid">层</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">面积</label>
+					<div class="layui-input-inline" style="width: 50px;">
+						<input lay-verify="number" min="1" type="number" name="area" autocomplete="off" class="layui-input">
+					</div>
+					<div class="layui-form-mid">平方米</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">租金/月</label>
+					<div class="layui-input-inline" style="width: 150px;">
+						<input lay-verify="number" min="1" type="number" name="price" autocomplete="off" class="layui-input">
+					</div>
+					<div class="layui-form-mid">元</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">房屋设备</label>
+				<div class="layui-input-block">
+					<input type="checkbox" name="bed" value="1" title="床">
+					<input type="checkbox" name="kt" value="1" title="空调">
+					<input type="checkbox" name="kd" value="1" title="宽带">
+					<input type="checkbox" name="czy" value="1" title="餐桌椅">
+					<input type="checkbox" name="yg" value="1" title="衣柜">
+					<input type="checkbox" name="sf" value="1" title="沙发">
+					<input type="checkbox" name="tv" value="1" title="电视">
+					<input type="checkbox" name="bx" value="1" title="冰箱">
+					<input type="checkbox" name="xyj" value="1" title="洗衣机">
+					<input type="checkbox" name="cyyj" value="1" title="抽油烟机">
+					<input type="checkbox" name="wbl" value="1" title="微波炉">
+					<input type="checkbox" name="trq" value="1" title="天然气">
+					<input type="checkbox" name="rsq" value="1" title="热水器">
+					<input type="checkbox" name="xdg" value="1" title="消毒柜">
+				</div>
+			</div>
+
+			<div class="layui-form-item layui-form-text">
+				<label class="layui-form-label">房屋描述</label>
+				<div class="layui-input-block">
+					<textarea name="description" placeholder="请输入内容" class="layui-textarea"></textarea>
+				</div>
+			</div>
+
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+				<legend>上传图片</legend>
+			</fieldset>
+
+			<div class="layui-upload">
+				<div class="uploadImgBtn" id="uploadImgBtn">
+			        <a href="javascript:;" class="file">选择文件<input lay-verify="image" class="uploadImg" type="file" name="file[]" multiple="multiple" id="file" accept="image/*"></a>
+			    </div>
+				<blockquote class="layui-elem-quote layui-quote-nm" style="margin-top: 10px;">
+					预览图：
+					<div class="layui-upload-list" id="demo2"></div>
+				</blockquote>
+			</div>
+			<div class="layui-form-item" align="center">
+				<div class="layui-input-block" style="margin: 0px" >
+					<input type="submit" class="layui-btn" name="submit" value="submit">
+					<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+				</div>
+			</div>
+			<!-- 更多表单结构排版请移步文档左侧【页面元素-表单】一项阅览 -->
+		</form>
+
+
+
+	</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script type="text/javascript" src="/HouseR/public/admin/lib/layui/layui.js" charset="utf-8"></script>
+<script>
+	var userM;
+	//检测是否登录
+	$.ajax({
+		url:"/HouseR/User/user/islogin",
+		dataType:"JSON",
+		success:function(data){
+			console.log(data);
+			userM=data;
+			if(data.msg==-1){
+				$("#userName").attr("href","/HouseR/User/user/login");
+				$("#logout").attr("href","/HouseR/User/user/register");
+			}else{
+				$("#userName").empty().append(data.data['username']);
+				$("#logout").empty().append("登出");
+				$("#logout").attr("href","/HouseR/User/user/logout");
+				$("#personControl").fadeIn("fast");
+				$("#host_id").attr("value",data.data['id']);
+			}
+		}
+	});
+	var city=<?php echo $select_city ?>;
+	console.log(city);
+	for(var i=0;i<city.length;i++){
+		$("#select_city").append("<option value="+city[i].id+">"+city[i].cityname+"</option>");
+	}
+
+	layui.use('form', function(){
+		var form = layui.form;
+		form.on('checkbox',function(data){
+			// console.log(data['elem'].checked);
+			console.log(data)
+		})
+
+		// form.on('submit(demo)', function(data){
+		// 	// data=JSON.stringify(data.field);
+		// 	// layer.alert(data, {
+		// 	// 	title: '最终的提交信息'
+		// 	// })
+		// 	// console.log(data);
+		// 	$("form").submit();
+		// 	// return true;
+		// });
+
+		$('form').submit(function(e){
+			var o=0,msg;
+			var d = {};
+			var t = $('form').serializeArray();
+			$.each(t, function() {
+		      d[this.name] = this.value;
+		    });
+		    console.log(d);
+		    if(userM.msg==-1){
+		    	o=-1;
+		    	msg="请先登录";
+		    }
+		    if(d['title'].length<5){
+		    	o=-1;
+		    	msg="标题长度有误";
+		    }else if(d['city']==-1){
+		    	o=-1;
+		    	msg="请选择城市";
+		    }else if(d['address']==""){
+		    	o=-1;
+		    	msg="请填写地址";
+		    }else if(d['rooms']==""||d['livingRooms']==""||d['bathrooms']==""){
+		    	o=-1;
+		    	msg="请填写户型";
+		    }else if(d['floor']==""){
+		    	o=-1;
+		    	msg="请填写楼层";
+		    }else if(d['area']==""){
+		    	o=-1;
+		    	msg="请填写面积";
+		    }else if(d['price']==""){
+		    	o=-1;
+		    	msg="请填写租金";
+		    }else if($("#demo2").find("img").length==0){
+		    	o=-1;
+		    	msg="请添加图片";
+		    }
+		    if(o!=-1){
+		    	return true;
+		    }
+	    	layer.msg(msg);
+	    	return false;
+		});
+
+		form.on('select', function(data){
+		  console.log(data.value); //得到被选中的值
+		  $.ajax({
+		  	url: "/HouseR/admin/index/get_city",
+		  	data: {"city_id": data.value},
+		  	dataType:"JSON",
+		  	success: function(result){
+			    	// alert(result);
+			    	console.log(result);
+			    	if(result['msg']=="0"){
+			    		var location=result['data'];
+			    		$("#select_location").empty();
+			    		for(var i=0;i<location.length;i++){
+			    			console.log(location[i].cityname);
+			    			$("#select_location").append("<option value="+location[i].id+">"+location[i].cityname+"</option>");
+			    		}
+						 form.render('select');//IMPORTANT
+						}
+					}
+				});
+		}); 
+
+		//各种基于事件的操作，下面会有进一步介绍
+	});
+
+	// layui.use('upload', function(){
+	// 	var $ = layui.jquery
+	// 	,upload = layui.upload;
+	// 	  	//多图片上传
+	// 		upload.render({
+	// 			elem: '#test2'
+	// 			,url: '/upload/'
+	// 			,acceptMime: 'image/*'
+	// 			,multiple: true
+	// 			,before: function(obj){
+	// 		  //预读本地文件示例，不支持ie8
+	// 		  obj.preview(function(index, file, result){
+	// 		  	$('#demo2').append('<img src="'+ result +'" alt="'+ file.name +'" class="layui-upload-img">');
+	// 		  });
+	// 		}
+	// 		,done: function(res){
+	// 		  //上传完毕
+	// 		}
+	// 		});
+	// });
+</script>
+
+<script>
+    $(document).ready(function(){
+        //为外面的盒子绑定一个点击事件
+        $("#uploadImgBtn").click(function(){
+            /*
+            1、先获取input标签
+            2、给input标签绑定change事件
+            3、把图片回显
+             */
+//            1、先回去input标签
+            var $input = $("#file");
+            console.log($input)
+//            2、给input标签绑定change事件
+            $input.on("change" , function(){
+                console.log(this)
+                //补充说明：因为我们给input标签设置multiple属性，因此一次可以上传多个文件
+                //获取选择图片的个数
+                var files = this.files;
+                var length = files.length;
+                console.log("选择了"+length+"张图片");
+                $('#demo2').empty();
+                //3、回显
+                $.each(files,function(key,value){
+                    //每次都只会遍历一个图片数据
+
+                    var fr = new FileReader();
+                    fr.onload = function(){
+    				  	$('#demo2').append('<img width="200px" src="'+ this.result +'" class="layui-upload-img">');
+                    }
+                    fr.readAsDataURL(value);
+                })
+
+            })
+
+            //4、我们把当前input标签的id属性remove
+            $input.removeAttr("id");
+            //我们做个标记，再class中再添加一个类名就叫test
+            // var newInput = '<input class="uploadImg test" type="file" name="file" multiple id="file">';
+            // $(this).append($(newInput));
+
+        })
+
+    })
+
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.ajax({
+			url:"/HouseR/Home/rent/get_message",
+			success:function(data){
+				if(data!="0") $("#dot").show();
+			}
+		});
+	});
+</script>
+</html>

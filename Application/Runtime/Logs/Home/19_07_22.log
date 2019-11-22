@@ -1,0 +1,2233 @@
+[ 2019-07-22T12:46:57+08:00 ] 127.0.0.1 /HouseR/Home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2019-07-22T12:47:02+08:00 ] 127.0.0.1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001522s ]
+
+[ 2019-07-22T12:47:13+08:00 ] 127.0.0.1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2019-07-22T12:47:15+08:00 ] 127.0.0.1 /HouseR/Home/rent/house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0067s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2019-07-22T12:47:15+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0040s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','12','2019-07-22 12:47:15') [ RunTime:0.0028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001107s ]
+
+[ 2019-07-22T12:47:15+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=12 AND user_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2019-07-22T12:47:17+08:00 ] 127.0.0.1 /HouseR/Home/rent/rent_house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0018s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2019-07-22T12:47:22+08:00 ] 127.0.0.1 /HouseR/Home/rent/apply_rent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+ERR: 1146:Table 'db_hr.rent' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `rent`
+ERR: 1146:Table 'db_hr.rent' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `rent`
+
+[ 2019-07-22T12:48:09+08:00 ] 127.0.0.1 /HouseR/Home/rent/apply_rent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `rent` [ RunTime:0.0070s ]
+SQL: INSERT INTO `rent` (`start_time`,`end_time`,`u_A_id`,`u_B_id`,`house_id`,`price_total`,`price_month`,`title`,`add_time`,`stat`) VALUES ('2019-07-22','2020-01-22','1','1','12','48000','8000','空嘎嘎嘎嘎嘎嘎嘎嘎嘎嘎嘎','2019-07-22 12:48:09','0') [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000033s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2019-07-22T12:48:10+08:00 ] 127.0.0.1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2019-07-22T12:49:00+08:00 ] 127.0.0.1 /HouseR/index.php/Home/Rent/index/city/3/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '3' AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '3' AND `status` = 1 ORDER BY `add_time` DESC LIMIT 2,2   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2019-07-22T12:49:02+08:00 ] 127.0.0.1 /HouseR/index.php/Home/Rent/index/city/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '3' AND `status` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '3' AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2019-07-22T12:49:04+08:00 ] 127.0.0.1 /HouseR/index.php/Home/Rent/index/city/3/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0104s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '3' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '3' AND `status` = 1 ORDER BY `add_time` DESC LIMIT 2,2   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2019-07-22T12:49:05+08:00 ] 127.0.0.1 /HouseR/index.php/Home/Rent/index/city/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '3' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '3' AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2019-07-22T14:59:43+08:00 ] 127.0.0.1 /HouseR/Home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2019-07-22T14:59:45+08:00 ] 127.0.0.1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2019-07-22T14:59:47+08:00 ] 127.0.0.1 /HouseR/Home/rent/house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0067s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2019-07-22T14:59:48+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=12 AND user_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2019-07-22T14:59:48+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0020s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','12','2019-07-22 14:59:48') [ RunTime:0.0033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2019-07-22T14:59:48+08:00 ] 127.0.0.1 /HouseR/Home/rent/house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0068s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000584s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2019-07-22T14:59:48+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0019s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','12','2019-07-22 14:59:48') [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2019-07-22T14:59:48+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=12 AND user_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2019-07-22T14:59:49+08:00 ] 127.0.0.1 /HouseR/Home/rent/house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0019s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2019-07-22T14:59:49+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0022s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','12','2019-07-22 14:59:49') [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2019-07-22T14:59:49+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=12 AND user_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001528s ]
+
+[ 2019-07-22T14:59:49+08:00 ] 127.0.0.1 /HouseR/Home/rent/house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0017s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2019-07-22T14:59:49+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=12 AND user_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2019-07-22T14:59:49+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0019s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','12','2019-07-22 14:59:49') [ RunTime:0.0029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2019-07-22T14:59:50+08:00 ] 127.0.0.1 /HouseR/Home/rent/house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0015s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001841s ]
+
+[ 2019-07-22T14:59:50+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0044s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','12','2019-07-22 14:59:50') [ RunTime:0.0036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2019-07-22T14:59:50+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=12 AND user_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2019-07-22T14:59:50+08:00 ] 127.0.0.1 /HouseR/Home/rent/house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0017s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2019-07-22T14:59:50+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0021s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','12','2019-07-22 14:59:50') [ RunTime:0.0039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001568s ]
+
+[ 2019-07-22T14:59:50+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=12 AND user_id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2019-07-22T15:03:37+08:00 ] 127.0.0.1 /HouseR/Home/rent/house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001742s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0020s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2019-07-22T15:03:37+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0020s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','12','2019-07-22 15:03:37') [ RunTime:0.0025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2019-07-22T15:03:37+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=12 AND user_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2019-07-22T15:03:40+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0080s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','12','2019-07-22 15:03:40') [ RunTime:0.0031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2019-07-22T15:03:40+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=12 AND user_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2019-07-22T15:03:42+08:00 ] 127.0.0.1 /HouseR/Home/rent/rent_house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0067s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2019-07-22T15:03:43+08:00 ] 127.0.0.1 /HouseR/Home/rent/rent_house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0072s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2019-07-22T15:04:07+08:00 ] 127.0.0.1 /HouseR/Home/rent/rent_house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0023s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2019-07-22T15:04:19+08:00 ] 127.0.0.1 /HouseR/Home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2019-07-22T15:04:30+08:00 ] 127.0.0.1 /HouseR/Home/rent/apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=3 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2019-07-22T15:04:33+08:00 ] 127.0.0.1 /HouseR/Home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2019-07-22T15:04:34+08:00 ] 127.0.0.1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007375s ]
+
+[ 2019-07-22T15:30:13+08:00 ] 127.0.0.1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2019-07-22T15:30:58+08:00 ] 127.0.0.1 /HouseR/index.php/Home/Rent/index/city/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '5' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '5' AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `city` WHERE ( pid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2019-07-22T15:30:59+08:00 ] 127.0.0.1 /HouseR/Home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2019-07-22T15:33:12+08:00 ] 127.0.0.1 /HouseR/Home/rent/apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=3 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2019-07-22T15:33:19+08:00 ] 127.0.0.1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2019-07-22T15:34:48+08:00 ] 127.0.0.1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2019-07-22T15:34:58+08:00 ] 127.0.0.1 /HouseR/Home/rent/house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0018s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2019-07-22T15:34:59+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=12 AND user_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2019-07-22T15:34:59+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0022s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('4','12','2019-07-22 15:34:59') [ RunTime:0.0027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2019-07-22T15:35:14+08:00 ] 127.0.0.1 /HouseR/Home/Collect/cancel_Collect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0067s ]
+SQL: DELETE FROM `collect` WHERE ( house_id=12 AND user_id=1 ) [ RunTime:0.0028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2019-07-22T15:35:21+08:00 ] 127.0.0.1 /HouseR/Home/rent/house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0067s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2019-07-22T15:35:21+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=12 AND user_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2019-07-22T15:35:21+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0018s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('4','12','2019-07-22 15:35:21') [ RunTime:0.0027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2019-07-22T15:35:23+08:00 ] 127.0.0.1 /HouseR/Home/rent/apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=3 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2019-07-22T15:35:25+08:00 ] 127.0.0.1 /HouseR/Home/rent/apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=3 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2019-07-22T15:35:26+08:00 ] 127.0.0.1 /HouseR/Home/rent/apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=3 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2019-07-22T15:35:30+08:00 ] 127.0.0.1 /HouseR/Home/rent/apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=3 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2019-07-22T15:35:32+08:00 ] 127.0.0.1 /HouseR/Home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2019-07-22T15:35:33+08:00 ] 127.0.0.1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [2] Illegal string offset 'title' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' C:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2019-07-22T18:57:48+08:00 ] ::1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [2] Illegal string offset 'title' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2019-07-22T18:57:51+08:00 ] ::1 /HouseR/Home/rent/house?house_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0067s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=15 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=15 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001111s ]
+
+[ 2019-07-22T18:57:52+08:00 ] ::1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0076s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','15','2019-07-22 18:57:51') [ RunTime:0.0357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2019-07-22T18:57:53+08:00 ] ::1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=15 AND user_id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011871s ]
+
+[ 2019-07-22T18:57:54+08:00 ] ::1 /HouseR/Home/Collect/add_Collect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0103s ]
+SQL: INSERT INTO `collect` (`house_id`,`user_id`,`add_time`) VALUES ('15','1','2019-07-22') [ RunTime:0.0293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001894s ]
+
+[ 2019-07-22T19:07:51+08:00 ] ::1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+NOTIC: [2] Illegal string offset 'title' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2019-07-22T19:07:53+08:00 ] ::1 /HouseR/Home/rent/house?house_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0068s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=15 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=15 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2019-07-22T19:07:54+08:00 ] ::1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0106s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','15','2019-07-22 19:07:53') [ RunTime:0.0299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001888s ]
+
+[ 2019-07-22T19:07:55+08:00 ] ::1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=15 AND user_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2019-07-22T19:07:56+08:00 ] ::1 /HouseR/Home/Collect/add_Collect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0036s ]
+SQL: INSERT INTO `collect` (`house_id`,`user_id`,`add_time`) VALUES ('15','3','2019-07-22') [ RunTime:0.0221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001887s ]
+
+[ 2019-07-22T19:08:06+08:00 ] ::1 /HouseR/Home/Collect/cancel_Collect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0102s ]
+SQL: DELETE FROM `collect` WHERE ( house_id=15 AND user_id=3 ) [ RunTime:0.0383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001915s ]
+
+[ 2019-07-22T19:08:13+08:00 ] ::1 /HouseR/Home/Collect/add_Collect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0054s ]
+SQL: INSERT INTO `collect` (`house_id`,`user_id`,`add_time`) VALUES ('15','3','2019-07-22') [ RunTime:0.0275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001904s ]
+
+[ 2019-07-22T19:08:23+08:00 ] ::1 /HouseR/Home/Collect/cancel_Collect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0023s ]
+SQL: DELETE FROM `collect` WHERE ( house_id=15 AND user_id=3 ) [ RunTime:0.0259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2019-07-22T19:08:29+08:00 ] ::1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0112s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+NOTIC: [2] Illegal string offset 'title' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2019-07-22T19:08:31+08:00 ] ::1 /HouseR/Home/rent/house?house_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0112s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=15 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=15 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2019-07-22T19:08:32+08:00 ] ::1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0105s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('0','15','2019-07-22 19:08:31') [ RunTime:0.0222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001899s ]
+
+[ 2019-07-22T19:09:13+08:00 ] ::1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0114s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+NOTIC: [2] Illegal string offset 'title' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' E:\phpStudy\PHPTutorial\WWW\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2019-07-22T19:09:24+08:00 ] ::1 /HouseR/Home/rent/house?house_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0064s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=15 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=15 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2019-07-22T19:09:25+08:00 ] ::1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0105s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','15','2019-07-22 19:09:24') [ RunTime:0.0225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2019-07-22T19:09:26+08:00 ] ::1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=15 AND user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001094s ]
+
+[ 2019-07-22T19:09:27+08:00 ] ::1 /HouseR/Home/Collect/add_Collect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0068s ]
+SQL: INSERT INTO `collect` (`house_id`,`user_id`,`add_time`) VALUES ('15','3','2019-07-22') [ RunTime:0.0283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2019-07-22T19:09:33+08:00 ] ::1 /HouseR/Home/rent/house?house_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0096s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=15 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=15 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001399s ]
+
+[ 2019-07-22T19:09:34+08:00 ] ::1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=15 AND user_id=3 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001559s ]
+
+[ 2019-07-22T19:09:35+08:00 ] ::1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0111s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','15','2019-07-22 19:09:34') [ RunTime:0.0250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2019-07-22T20:02:14+08:00 ] ::1 /HouseR/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2019-07-22T20:03:05+08:00 ] ::1 /HouseR/Home/rent/house?house_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0058s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=15 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=15 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2019-07-22T20:03:06+08:00 ] ::1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=15 AND user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2019-07-22T20:03:07+08:00 ] ::1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0132s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','15','2019-07-22 20:03:06') [ RunTime:0.0252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001900s ]
+
+[ 2019-07-22T20:05:43+08:00 ] ::1 /HouseR/Home/rent/house?house_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0122s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=15 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=15 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2019-07-22T20:05:44+08:00 ] ::1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=15 AND user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2019-07-22T20:05:45+08:00 ] ::1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0099s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','15','2019-07-22 20:05:44') [ RunTime:0.0299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001970s ]
+
+[ 2019-07-22T22:10:59+08:00 ] 127.0.0.1 /HouseR/Home/rent/house
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+NOTIC: [8] Undefined index: house_id D:\xampp\htdocs\HouseR\Application\Home\Controller\RentController.class.php 第 241 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2019-07-22T22:11:53+08:00 ] 127.0.0.1 /HouseR/Home/rent/house
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001864s ]
+NOTIC: [8] Undefined index: house_id D:\xampp\htdocs\HouseR\Application\Home\Controller\RentController.class.php 第 241 行.
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0139s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=-1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=-1 )  [ RunTime:0.0468s ]
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\HouseR\Application\Home\Controller\RentController.class.php 第 256 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.050163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.050219s ]
+
+[ 2019-07-22T22:11:55+08:00 ] 127.0.0.1 /HouseR/Home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2019-07-22T22:12:13+08:00 ] 127.0.0.1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.3010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0839s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [2] Illegal string offset 'title' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001350s ]
+
+[ 2019-07-22T22:13:16+08:00 ] 127.0.0.1 /HouseR/Home/rent/house?house_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0180s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=12 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=12 )  [ RunTime:0.0311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005344s ]
+
+[ 2019-07-22T22:13:16+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0317s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','12','2019-07-22 22:13:16') [ RunTime:0.2898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001988s ]
+
+[ 2019-07-22T22:13:16+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0467s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=12 AND user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2019-07-22T22:13:20+08:00 ] 127.0.0.1 /HouseR/Home/Collect/cancel_Collect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0587s ]
+SQL: DELETE FROM `collect` WHERE ( house_id=12 AND user_id=3 ) [ RunTime:0.0736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2019-07-22T23:04:27+08:00 ] 127.0.0.1 /HouseR/Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001311s ]
+
+[ 2019-07-22T23:04:30+08:00 ] 127.0.0.1 /HouseR/Home/rent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0789s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0406s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = 3 AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [2] Illegal string offset 'title' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001116s ]
+
+[ 2019-07-22T23:04:33+08:00 ] 127.0.0.1 /HouseR/index.php/Home/Rent/index/city/3/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '3' AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '3' AND `status` = 1 ORDER BY `add_time` DESC LIMIT 2,2   [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [2] Illegal string offset 'title' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2019-07-22T23:04:34+08:00 ] 127.0.0.1 /HouseR/index.php/Home/Rent/index/city/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '3' AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT house.*,image.path,city.cityname,c.cityname AS locationName FROM `house` INNER JOIN image INNER JOIN city INNER JOIN city c ON image.`house_id`=house.`id` AND image.`top`=1 AND city.`id`=house.`city` AND c.`id`=house.`location`  WHERE `city` = '3' AND `status` = 1 ORDER BY `add_time` DESC LIMIT 0,2   [ RunTime:0.0158s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `city` WHERE ( pid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `city` WHERE ( type=2 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [2] Illegal string offset 'title' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 155 行.
+NOTIC: [2] Illegal string offset 'data' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'livingrooms' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'rooms' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 157 行.
+NOTIC: [2] Illegal string offset 'address' D:\xampp\htdocs\HouseR\Application\Runtime\Cache\Home\b29b1e167bb03e3f834dcac5acf96283.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2019-07-22T23:04:40+08:00 ] 127.0.0.1 /HouseR/Home/rent/house?house_id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `house` [ RunTime:0.0132s ]
+SQL: SELECT house.*,city.cityname,c.cityname AS locationName,a.username AS a_username,a.phone AS a_phone FROM `house` INNER JOIN city INNER JOIN city c ON city.`id`=house.`city` AND c.`id`=house.`location` INNER JOIN user a ON a.`id`=house.`host_id`  WHERE ( house.id=14 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `image` WHERE ( house_id=14 )  [ RunTime:0.0420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2019-07-22T23:04:41+08:00 ] 127.0.0.1 /HouseR/Home/History/addHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002108s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0224s ]
+SQL: INSERT INTO `history` (`user_id`,`house_id`,`add_time`) VALUES ('3','14','2019-07-22 23:04:41') [ RunTime:0.1305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002188s ]
+
+[ 2019-07-22T23:04:41+08:00 ] 127.0.0.1 /HouseR/Home/Collect/isCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006592s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0115s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( house_id=14 AND user_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002334s ]
+

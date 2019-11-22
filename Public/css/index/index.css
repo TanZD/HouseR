@@ -1,0 +1,91 @@
+.bd{
+	position:absolute;
+	top:0px;
+	right:0px;
+	left:0px;
+	bottom: 0px;
+	background-color:#fff;
+	background:url('../../images/anna-sullivan-yxRYfsrdyWU-unsplash.jpg') no-repeat center;
+	background-size:cover; 
+}
+.title{
+	margin: 80px auto;
+	cursor: pointer;
+}
+.title:hover{
+
+}
+.l_c a{
+	color: #FFFFFF;
+	padding:0px 15px;
+	transition: all 0.6s;
+}
+.l_c a:hover{
+	color: #40820682;
+	text-decoration: underline;
+    text-shadow: 10px -3px 2px #ececec;	
+}
+.login{
+	float: right;
+	margin: 5px 15px;
+	cursor: pointer;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+.c_c{
+	width: 50%;
+	margin: 80px auto;
+	text-align: center;
+}
+.c_c div{
+	color: #FFFFFF;
+	cursor: pointer;
+	line-height: 40px;
+    font-size: 28px;
+    border: 1px solid #efe8e8;
+    padding: 15px 15px 15px 0px;
+	transition: all 0.6s;
+}
+.c_c div:hover{
+	color: #ffe9e9;
+    text-shadow: 6px -1px 6px #716969;
+    box-shadow: 0px 0px 3px 2px #fffbfb;
+}
+.c_b{
+	width: 200px;
+}
+.c_b i{
+	font-size: 48px;
+	padding-right: 15px;
+}
+.breath_c{
+	 /* IE10、Firefox and Opera，IE9以及更早的版本不支持 */
+    animation-name: breath;                         /* 动画名称 */
+    animation-duration: 4s;                         /* 动画时长3秒 */
+    animation-timing-function: ease-in-out;         /* 动画速度曲线：以低速开始和结束 */
+    animation-iteration-count: infinite;            /* 播放次数：无限 */
+ 
+    /* Safari and Chrome */
+    -webkit-animation-name: breath;                 /* 动画名称 */
+    -webkit-animation-duration: 4s;                 /* 动画时长3秒 */
+    -webkit-animation-timing-function: ease-in-out; /* 动画速度曲线：以低速开始和结束 */
+    -webkit-animation-iteration-count: infinite;    /* 播放次数：无限 */
+}
+
+@keyframes breath {
+    from { opacity: 0.5; }                          /* 动画开始时的不透明度 */
+    50%  { opacity:   1; }                          /* 动画50% 时的不透明度 */
+    to   { opacity: 0.5; }                          /* 动画结束时的不透明度 */    
+}
+ 
+@-webkit-keyframes breath {
+    from { opacity: 0.5; }                          /* 动画开始时的不透明度 */
+    50%  { opacity:   1; }                          /* 动画50% 时的不透明度 */
+    to   { opacity: 0.5; }                          /* 动画结束时的不透明度 */
+}

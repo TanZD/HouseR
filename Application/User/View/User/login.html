@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<title>登录</title>
+	<meta charset="uft-8">
+	<!-- 	<link rel="stylesheet" type="text/css" href="__ADMIN__/bootstrap-3.3.7-dist/css/bootstrap.min.css"/> -->
+ 	<link rel="stylesheet" type="text/css" href="__INDEX__/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="__INDEX__/css/user/login.css"/><!--引入CSS-->
+ 	<link rel="stylesheet" type="text/css" href="__INDEX__/css/index.css">
+	<link rel="stylesheet" type="text/css" href="__INDEX__/verify-master/css/verify.css">
+ 	<link rel="stylesheet" type="text/css" href="__INDEX__/layui/css/layui.css">
+		<!-- <script src="js/jquery-3.4.1.min.js" charset="utf-8"></script>
+			<script src="js/registerCheck.js" charset="utf-8"></script> -->
+</head>
+<body>
+	<div class="bd">
+	<div class='login-container'></div>
+		<div class="login breath_c" align="center">
+			<div class="login_title" >HouseR欢迎您</div>
+
+			<form class="layui-form layui-form-pane" action="{:U('postLogin')}" method="post" id="forma">
+				<div class="center">	
+					<div class="layui-form-item">
+						<label class="layui-form-label"><i class="fa fa-user fa-lg" style="line-height: 30px;" ></i></label>
+						<div class="layui-input-block">
+							<input autocomplete="off" type="text"  required  lay-verify="required" name="login" id="login" placeholder="电话号码或者用户名" class="layui-input">
+						</div>
+					</div>
+
+					<div class="input"><div class="info"><span id="nameError" class="info2"></span></div></div>
+
+					<div class="layui-form-item">
+						<label class="layui-form-label"><i class="fa fa-lock fa-lg" style="line-height: 30px;"></i></label>
+						<div class="layui-input-block">
+							<input type="password"  required  lay-verify="required" name="password" id="password" placeholder="密码" class="layui-input">
+						</div>
+					</div>
+
+					<div class="input"><div class="info"><span id="passwordError" class="info2"></span></div></div>
+
+					<div id="mpanel1" class="yanzhengma"></div>
+
+
+					<div class="info3" id="info3">{$msg}</div>
+
+					<div>
+						<button id="submitB"  type="button" class="layui-btn layui-btn layui-btn-lg button btn"  font-weight="10px" font-size="20px" >登录</button>
+					</div>
+
+				</div>
+
+			</form>
+			<div class="reg" >
+				<a href="{:U('register')} ">注册</a>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+<script src="__INDEX__/js/jquery.min.js"></script>	
+<script src="__INDEX__/layui/layui.js"></script>
+<script type="text/javascript" src="__INDEX__/js/user/login.js"></script>
+<script type="text/javascript" src="__INDEX__/verify-master/js/verify.min.js"></script>
+<script type="text/javascript">
+$("#mpanel1").keyup(function(event){
+	if(event.keyCode ==13){
+		$("#submitB").click();
+	}
+});	
+// $("#forma").submit();
+$(document).ready(function(){
+
+	$('#mpanel1').codeVerify({
+    //常规验证码type=1， 运算验证码type=2
+    type : 1,
+	    //验证码宽度
+	    width : '160px',
+	    //验证码高度
+	    height : '49px',
+	    //提交按钮的id名称
+	    codeLength:4,
+	    btnId : 'submitB',
+	    //验证成功以后的回调
+	    success : function() {
+	    	// alert("验证码正确");
+	    	$("#forma").submit();
+	    },
+	    error:function (){
+	    	// alert("验证码错误，请重新输入","{:U('login')} ");
+	    	$("#info3").empty().append("验证码错误");
+	    }
+	});
+});
+</script>
+</html>

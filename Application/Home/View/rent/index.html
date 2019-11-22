@@ -1,0 +1,613 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>HELLO WORLD</title>
+ 	<meta charset="utf-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+ 	<link rel="stylesheet" type="text/css" href="__INDEX__/css/index.css">
+ 	<link rel="stylesheet" type="text/css" href="__INDEX__/layui/css/layui.css">
+ 	<link rel="stylesheet" type="text/css" href="__INDEX__/font-awesome/css/font-awesome.min.css">
+ 	<!-- <link rel="stylesheet" type="text/css" href="__INDEX__/bootstrap-3.3.7-dist/css/bootstrap.css"> -->
+ </head>
+ <body>
+ 	<div class="bd">
+ 		<div class="header_list" id="header">
+			<ul class="layui-nav" lay-filter="" style="border-radius: 0px;">
+				<li class="header_list_left" style="float: left;"><img onclick="window.location.href='/HouseR/Home/index'" style="width: 100px;" src="__INDEX__/images/logo.png"></li>
+				<li class="layui-nav-item" style="float: left;">
+					<a href="javascript:;" id="c_city"></a>
+				</li>
+ 				<li class="layui-nav-item" id="apply_house" style="display: none;"><a href="/HouseR/Home/rent/apply" >我要出租</a></li>
+ 				<li class="layui-nav-item" style="display: none" id="personControl"><a href="/HouseR/Homepage/index">个人中心<span id="dot" style="display: none" class="layui-badge-dot"></span></a></li>
+ 				<li class="layui-nav-item"><a href="" id="userName">登录</a></li>
+ 				<li class="layui-nav-item"><a href="" id="logout">注册</a></li>
+			</ul>
+ 		</div>
+
+ 		<div class="search">
+ 			<div class="search_class">
+ 				<div class="a search_b" id="search_button"><i class="layui-icon layui-icon-search"></i></div>
+ 				<div class="a">
+ 					<input type="text" name="search_content" placeholder="搜索" id="search_content">
+ 				</div>
+ 			</div>
+ 		</div>
+
+
+ 		<div class="search_p">
+ 			<div class="search_p_l">
+ 				<div class="search_class_select" id="search_address" style="border-bottom: 1px solid #efefb7a8;">
+ 					<span>区域</span>
+ 					<ul></ul>
+ 					<div style="clear: both;"></div>
+ 				</div>
+
+ 				<div class="search_class_select" id="search_price">
+ 					<span>租金</span>
+ 					<ul>
+ 						<li><span class="fa fa-square-o fa-lg"></span>500元以下</li>
+ 						<li><span class="fa fa-square-o fa-lg"></span>500-1000元</li>
+ 						<li><span class="fa fa-square-o fa-lg"></span>1000-1500元</li>
+ 						<li><span class="fa fa-square-o fa-lg"></span>1500-2000元</li>
+ 						<!-- <div id="search_price_more" class="more_message"> -->
+ 							<li><span class="fa fa-square-o fa-lg"></span>2000-2500元</li>
+ 							<li><span class="fa fa-square-o fa-lg"></span>2500元以上</li>
+ 						</ul>
+ 						<!-- <div class="show_more" id="add_more">+展开更多</div> -->
+ 						<div style="clear: both;"></div>
+ 					</div>
+
+ 					<div id="slidetoggle" style="display: none">
+ 						<div class="search_class_select" id="search_area">
+ 							<span>面积</span>
+ 							<ul>
+ 								<li><span class="fa fa-square-o fa-lg"></span>50平米以下</li>
+ 								<li><span class="fa fa-square-o fa-lg"></span>50-70平米</li>
+ 								<li><span class="fa fa-square-o fa-lg"></span>70-100平米</li>
+ 								<li><span class="fa fa-square-o fa-lg"></span>100-130平米</li>
+ 								<!-- <div id="search_price_more" class="more_message"> -->
+ 									<li><span class="fa fa-square-o fa-lg"></span>130-180平米</li>
+ 									<li><span class="fa fa-square-o fa-lg"></span>180平米以上</li>
+ 								</ul>
+ 								<!-- <div class="show_more" id="add_more">+展开更多</div> -->
+ 								<div style="clear: both;"></div>
+ 							</div>
+
+ 							<div class="search_class_select" id="search_rooms">
+ 								<span>户型</span>
+ 								<ul>
+ 									<li><span class="fa fa-square-o fa-lg"></span>一室</li>
+ 									<li><span class="fa fa-square-o fa-lg"></span>二室</li>
+ 									<li><span class="fa fa-square-o fa-lg"></span>三室</li>
+ 									<li><span class="fa fa-square-o fa-lg"></span>四室</li>
+ 									<!-- <div id="search_price_more" class="more_message"> -->
+ 										<li><span class="fa fa-square-o fa-lg"></span>四室以上</li>
+ 									</ul>
+ 									<!-- <div class="show_more" id="add_more">+展开更多</div> -->
+ 									<div style="clear: both;"></div>
+ 								</div>
+ 								
+ 								<div class="search_class_select" id="search_floors">
+ 									<span>楼层</span>
+ 									<ul>
+ 										<li><span class="fa fa-square-o fa-lg"></span>6层以下</li>
+ 										<li><span class="fa fa-square-o fa-lg"></span>6-12层</li>
+ 										<li><span class="fa fa-square-o fa-lg"></span>12层以上</li>
+ 									</ul>
+ 									<!-- <div class="show_more" id="add_more">+展开更多</div> -->
+ 									<div style="clear: both;"></div>
+ 								</div>
+ 								
+ 								<div class="search_class_select" id="search_eq">
+ 									<span>配置</span>
+ 									<ul>
+ 										<li><span class="fa fa-square-o fa-lg"></span>床</li>
+ 										<li><span class="fa fa-square-o fa-lg"></span>衣柜</li>
+ 										<li><span class="fa fa-square-o fa-lg"></span>餐桌椅</li>
+ 										<li><span class="fa fa-square-o fa-lg"></span>空调</li>
+ 										<li><span class="fa fa-square-o fa-lg"></span>电视</li>
+ 										<li><span class="fa fa-square-o fa-lg"></span>热水器</li>
+ 										<li><span class="fa fa-square-o fa-lg"></span>洗衣机</li>
+ 										<div id="search_eq_more" class="more_message">
+ 											<li><span class="fa fa-square-o fa-lg"></span>冰箱</li>
+ 											<li><span class="fa fa-square-o fa-lg"></span>宽带</li>
+ 											<li><span class="fa fa-square-o fa-lg"></span>抽油烟机</li>
+ 											<li><span class="fa fa-square-o fa-lg"></span>微波炉</li>
+ 											<li><span class="fa fa-square-o fa-lg"></span>天然气</li>
+ 											<li><span class="fa fa-square-o fa-lg"></span>消毒柜</li>
+ 											<li><span class="fa fa-square-o fa-lg"></span>沙发</li>
+ 										</div>
+ 									</ul>
+ 									<div class="show_more" id="add_more"><i class="fa fa-plus fa-lg"></i> 展开更多</div>
+ 									<div style="clear: both;"></div>
+ 								</div>
+ 							</div>
+ 							<div class="more_c layui-col-md12" id="more_c"><i class='fa fa-arrow-down fa-fw'></i><span>更多条件</span></div>
+ 							<div style="clear: both;"></div>
+ 							<div class="clear_request"><span id="clear_request"><i class="fa fa-scissors fa-g"></i> 清除筛选条件</span></div>
+				<!-- <volist name="location_city" id="vo">
+					<div>{$vo.cityname}</div>
+				</volist> -->
+			</div>
+		</div>
+
+		<div class="list_pl">
+			<div class="list_bar">
+				<div class="lb_l">全部房源</div>
+				<div class="lb_r" id="lb_r">
+					<ul>
+						<li>默认排序</li>
+						<li>租金</li>
+						<li>面积</li>
+					</ul>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+		</div>
+
+		<div class="house_list">
+			<div class="h_list">
+				<ul id="house_list_ul">
+						<!-- <li>
+							<div class='h_detail_img layui-col-md2 layui-col-sm12 layui-col-xs12'>
+								<img height='90px' src='/HouseR/images/house/a.jpg'>
+							</div>
+							<div class='h_detail layui-col-md7 layui-col-sm8 layui-col-xs12'>
+								<div>{$data[0].title}</div>
+								<div style='float: left;'>
+									<div><i class='fa fa-map-marker fa-fw'></i>{$data['data'][0].livingrooms}厅{$data[0].rooms}房</div>
+									<div><i class='fa fa-home fa-fw'></i>{$data[0].address}</div>
+								</div>
+							</div>
+							<div class='h_detail_price layui-col-md3 layui-col-sm4 layui-col-xs12'>price</div>
+							<div style='clear: both;'></div>
+						</li> -->
+						<div style='clear: both;'></div>
+					</ul>
+				</div>
+				<div id="demo1" align="center"></div>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+<script src="__INDEX__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__INDEX__/layui/layui.js" charset="utf-8"></script>
+<!-- <script type="text/javascript" src="__INDEX__/js/islogin.js" charset="utf-8"></script> -->
+<!-- <script type="text/javascript" src="__INDEX__/bootstrap-3.3.7-dist/js/bootstrap.js"></script> -->
+<script type="text/javascript">
+	//获取区域
+	var house_list=<?php echo ($data);?>;
+	console.log(house_list);
+	//获取区域
+	var blist=<?php echo ($location_city);?>;
+	//获取城市
+	var t_city=<?php echo ($t_city);?>;
+	//获取域名
+	var pathname=window.location.pathname;
+	//获取域名后的参数
+	var path=pathname.substring(pathname.lastIndexOf("index/")+6);
+	//存放参数
+	var request=new Object();
+	//存放condition
+	var strs;
+	//获取问号后的参数
+	// GetURLParameter();
+	if(window.location.pathname.indexOf("index/")!=-1){
+    	//获取/后的参数
+    	if(path.indexOf("/")!=-1){
+			var str=path; //从第一个字符开始读
+			var s=str.split("/");//从&分割字符串
+			for(var i=0;i<s.length-1;i+=2){
+				request[s[i]]=s[i+1];
+			}
+			console.log("/后的参数：");
+			console.log(request);
+		}
+		//获取condition后的参数
+		if(request['condition']!=null){
+			var str=request['condition']; //从第一个字符开始读
+			strs=str.split("-");//从&分割字符串
+			console.log("condition后的参数：");
+			console.log(strs);
+		}
+	}
+
+	//检测是否登录
+	$.ajax({
+		url:"/HouseR/User/user/islogin",
+		dataType:"JSON",
+		success:function(data){
+			console.log(data);
+			if(data.msg==-1){
+				$("#userName").attr("href","/HouseR/User/user/login");
+				$("#logout").attr("href","/HouseR/User/user/register");
+			}else{
+				$("#userName").empty().append(data.data['username']);
+				$("#logout").empty().append("登出");
+				$("#logout").attr("href","/HouseR/User/user/logout");
+				$("#personControl").fadeIn("fast");
+				$("#apply_house").fadeIn("fast");
+			}
+		}
+	});
+
+    // for(var i=0;i<t_city.length;i++){
+    // 	$(".layui-nav-child").append("<dt style='padding:0px;'>"+t_city[i].cityname+"</dt>");
+    // }
+
+    //清除筛选条件选项
+    // console.log("size:"+Object.keys(request).length);
+    // 	alert("size:"+Object.keys(request).length);
+    // if(Object.keys(request).length>1){
+    // 	$("#clear_request").show();
+    // }
+
+    //显示房屋列表
+    if(house_list.total_num!=0){
+    	var h_l=house_list.data;
+    	for(var i=0;i<house_list.data.length;i++){
+    		$("#house_list_ul").append("<li><div class='h_detail_img layui-col-md3 layui-col-sm12 layui-col-xs12'><img height='100%' width='100%' src='"+h_l[i].path+"'></div><div class='h_detail layui-col-md7 layui-col-sm8 layui-col-xs12'><div style='font-size: 18px;' class='h_title'>"+h_l[i].title+"</div><div style='float: left;'><div><i class='fa fa-map-marker fa-fw'></i>"+h_l[i].livingrooms+"厅"+h_l[i].rooms+"房</div><div class='h_title'><i class='fa fa-home fa-fw'></i>"+h_l[i].address+"</div></div></div><div class='h_detail_price layui-col-md2 layui-col-sm4 layui-col-xs12'>￥"+h_l[i].price+"/月</div><div style='clear: both;'></div></li>");
+    	}
+    }else{
+    	$("#house_list_ul").append("无搜索结果");
+    }
+
+    var cur_city;
+    if(request['city']==null||request['city']=="") request['city']=3;
+	// alert(request['city']);
+	$("#c_city").after("<div class='c_city' style='display:none;' id='se_city'></div>");
+	for(var i=0;i<t_city.length;i++){
+		$("#se_city").append("<li>"+t_city[i].cityname+"</li>");
+		//获取当前城市
+		if(request['city']==t_city[i].id){
+			$("#c_city").append(t_city[i].cityname);
+		}
+	}
+	$("#c_city").click(function(){
+		$("#se_city").toggle();
+	});
+
+	$().ready(function(){
+		getLocation();
+        // header_c();
+        // $(window).scroll(function(){header_c();});
+        $("#house_list_ul li").click(function(){
+        	var index = $("#house_list_ul li").index(this);
+        	window.location.href="/HouseR/Home/rent/house?house_id="+house_list.data[index].id;
+        });
+
+        $("#add_more").click(function(){
+        	if($("#search_eq_more").css('display')=="none") $("#add_more").empty().append("<i class='fa fa-minus fa-lg'></i> 收起部分");
+        	else $("#add_more").empty().append("<i class='fa fa-plus fa-lg'></i> 展开更多");
+        	$("#search_eq_more").toggle();
+        	// $("#search_eq_more").empty().append("-");
+        })
+        $("#more_c").click(function(){
+        	if($("#slidetoggle").css('display')=="none") $("#more_c").empty().append("<i class='fa fa-arrow-up fa-fw'></i> 收起条件");
+        	else $("#more_c").empty().append("<i class='fa fa-arrow-down fa-fw'></i> 更多条件");
+        	$("#slidetoggle").slideToggle();
+        });
+
+        $('body').click(function(e) {
+        	if(e.target.id != 'se_city'&&e.target.id!='c_city'){
+        		if ($('#se_city').is(':visible')){
+        			$('#se_city').hide();
+        		}
+        	}
+        })
+
+        $(".c_city li").click(function(){
+        	var index = $(".c_city li").index(this);
+        	request=new Object();
+        	request['city']=t_city[index].id;
+        	URLHref();
+        });
+
+        //搜索事件
+        $("#search_button").click(function(){request['keyword']=getKeyWord(); URLHref();});
+        $("#search_content").keypress(function(event){
+        	if(event.keyCode==13){
+        		request['keyword']=getKeyWord();
+        		URLHref();
+        	}
+        });
+
+        //价格点击事件
+        $("#search_price ul li").click(function(){
+        	var index = $("#search_price ul li").index(this)+1;
+        	index="p"+index;
+			// console.log(index);
+			getCondition(index);
+			// console.log(request['condition']);
+		});
+
+		//面积点击事件
+		$("#search_area ul li").click(function(){
+			var index = $("#search_area ul li").index(this)+1;
+			index="a"+index;
+			getCondition(index);
+		});
+
+		//户型点击事件
+		$("#search_rooms ul li").click(function(){
+			var index = $("#search_rooms ul li").index(this)+1;
+			index="r"+index;
+			getCondition(index);
+		});
+
+		//楼层点击事件
+		$("#search_floors ul li").click(function(){
+			var index = $("#search_floors ul li").index(this)+1;
+			index="f"+index;
+			getCondition(index);
+		});
+
+		$("#search_eq ul li").click(function(){
+			var index=$("#search_eq ul li").index(this)+1;
+			index="e"+index;
+			getCondition(index);
+		});
+
+		//区域点击事件
+		$("#search_address li").click(function(){
+			var index = $("#search_address li").index(this)+1;
+			console.log(blist[index-1]);
+			if(request['location']==blist[index-1].id){
+				request['location']="";
+			}else{
+				request['location']=blist[index-1].id
+			}
+			URLHref();
+		});
+
+		//排序点击事件
+		$("#lb_r ul li").click(function(){
+			var index=$("#lb_r ul li").index(this)+1;
+			// if(request['order']==null||request['order']=="") request['order']=1;
+			// console.log("request['order']:::"+request['order']);
+			// console.log("index：：："+index);
+			// if(request['order'].indexOf(index)!==-1){
+			// 	request['order']*=-1;
+			// }else{
+			// 	request['order']=index;
+			// }	
+			if(request['order']==null||request['order']=="") request['order']=1;
+			switch(index) {
+				case 1:
+				if(request['order']==1||request['order']==-1){
+					request['order']*=-1;
+				}else request['order']=1;
+				break;
+				case 2:
+				if(request['order']==2||request['order']==-2){
+					request['order']*=-1;
+				}else request['order']=2;
+				break;
+				case 3:
+				if(request['order']==3||request['order']==-3){
+					request['order']*=-1;
+				}else request['order']=3;
+				break;
+				default:
+				request['order']=1;
+				break;
+			} 
+			URLHref();
+		});
+
+		//清除筛选条件
+		$("#clear_request").click(function(){
+			var city = request['city']==""? 3: request['city'];
+			request=new Object();
+			request["city"]=city;
+			URLHref();
+		});
+
+
+		//根据选择改变文本颜色
+		if(strs!=null){
+			console.log(strs);
+			var isSlideDown=-1;
+			for(var i=0;i<strs.length;i++){
+				if(strs[i].indexOf("p")!=-1){
+					console.log(strs[i].indexOf("p"));
+					var t=strs[i].substr(1)-1;
+					$("#search_price ul li").eq(t).addClass("current_select");
+					$("#search_price ul li span").eq(t).removeClass().addClass("fa fa-check-square-o fa-lg");
+				}else if(strs[i].indexOf("a")!=-1){
+					var t=strs[i].substr(1)-1;
+					isSlideDown=1;
+					$("#search_area ul li").eq(t).addClass("current_select");
+					$("#search_area ul li span").eq(t).removeClass().addClass("fa fa-check-square-o fa-lg");
+				}else if(strs[i].indexOf("r")!=-1){
+					var t=strs[i].substr(1)-1;
+					isSlideDown=1;
+					$("#search_rooms ul li").eq(t).addClass("current_select");
+					$("#search_rooms ul li span").eq(t).removeClass().addClass("fa fa-check-square-o fa-lg");
+				}else if(strs[i].indexOf("f")!=-1){
+					var t=strs[i].substr(1)-1;
+					isSlideDown=1;
+					$("#search_floors ul li").eq(t).addClass("current_select");
+					$("#search_floors ul li span").eq(t).removeClass().addClass("fa fa-check-square-o fa-lg");
+				}else if(strs[i].indexOf("e")!=-1){
+					var t=strs[i].substr(1)-1;
+					isSlideDown=1;
+					if(t>7){
+						$("#add_more").empty().append("<i class='fa fa-minus fa-lg'></i> 收起部分");
+						$("#search_eq_more").slideDown();
+					}
+					$("#search_eq ul li").eq(t).addClass("current_select");
+					$("#search_eq ul li span").eq(t).removeClass().addClass("fa fa-check-square-o fa-lg");
+				}
+			}
+
+			if(isSlideDown!=-1) {
+				$("#more_c").empty().append("<i class='fa fa-arrow-up fa-fw'></i> 收起条件");
+				$("#slidetoggle").show();
+			}
+			if(request["keyword"]!=null&&request["keyword"]!=""){
+				$("#search_content").attr("value",request["keyword"]);
+			}
+		}
+
+		//当前排序方式颜色改变
+		if(request['order']==""||request['order']==null){
+			console.log("order"+request['order']);
+			$("#lb_r ul li").eq(0).addClass("current_select");
+		}else{
+			var t=request['order'];
+			console.log("order"+request['order']);
+			if(t==1||t==-1) {
+				if(t==-1){
+					$("#lb_r ul li").eq(0).empty();
+					$("#lb_r ul li").eq(0).append("默认排序<i class='fa fa-chevron-down fa-lg'></i>").addClass("current_select");
+				}else{
+					$("#lb_r ul li").eq(0).empty();
+					$("#lb_r ul li").eq(0).append("默认排序<i class='fa fa-chevron-up fa-lg'></i>").addClass("current_select");
+				}
+			}
+			else if(t==2||t==-2) {
+				if(t==-2){
+					$("#lb_r ul li").eq(1).empty();
+					$("#lb_r ul li").eq(1).append("租金<i class='fa fa-chevron-down fa-lg'></i>").addClass("current_select");
+				}else{
+					$("#lb_r ul li").eq(1).empty();
+					$("#lb_r ul li").eq(1).append("租金<i class='fa fa-chevron-up fa-lg'></i>").addClass("current_select");
+				}
+			}
+			else {
+				if(t==-3){
+					$("#lb_r ul li").eq(2).empty();
+					$("#lb_r ul li").eq(2).append("面积<i class='fa fa-chevron-down fa-lg'></i>").addClass("current_select");
+				}else{
+					$("#lb_r ul li").eq(2).empty();
+					$("#lb_r ul li").eq(2).append("面积<i class='fa fa-chevron-up fa-lg'></i>").addClass("current_select");
+				}
+			}
+		}
+
+        // $("#url").append(window.location.pathname.substr(window.location.pathname.indexOf("index/")+6));
+        // $("#url2").append();
+        // $("#url2").append(pa['keyword']);
+        // console.log(request);
+    });
+
+ 	function GetURLParameter(){
+		var url=location.search;//获取问号及后面的参数
+		if(url.indexOf("?")!=-1){
+			var str=url.substr(1); //从第一个字符开始读
+			strs=str.split("&");//从&分割字符串
+			for(var i=0;i<strs.length;i++){
+				request[strs[i].split("=")[0]]=decodeURI(strs[i].split("=")[1]);//unescape中文会乱码
+			}
+		}
+	}
+
+	function header_c(){
+    	var top = $("#header").offset().top;//根据id获取指定的位置
+    	var scrollTop = $(window).scrollTop();//获取当前滑动的位置
+        // console.log("top:"+top);
+        // console.log("scrollTop:"+scrollTop);
+        if(scrollTop<=60){
+        	$("#header").css("position","relative").fadeIn("slow");
+        }else{
+        	$("#header").css("position","fixed").fadeIn("slow");
+        	$("#header").offset().top=scrollTop;
+        }
+    }
+
+    function URLHref(){
+    	var url="__URL__/index";
+		// if(request['condition']!="") url+="/condition/"+request['condition'];
+		// if(request['location']!="") url+="/location/"+request['location'];
+		// if(request['order']!="") url+="/order/"+request['order'];
+		// if(request['p']!="") url+="/p/"+request['p'];
+		// if(request['keyword']!="") url+="/keyword/"+request['keyword'];
+		for (var key in request) {         
+			//通过遍历对象属性的方法，遍历键值对，获得key，然后通过 对象[key]获得对应的值            
+			name = key;         
+			value = request[key];
+			// console.log(name+"::"+value);
+			if(value!=null&&value!="") url+="/"+name+"/"+value;
+		}
+		console.log(url);
+		console.log(request);
+		window.location.href=url;
+	}
+
+	//获取当前城市的区域并改变选中区域的文本颜色
+	function getLocation(){
+		for(var i=0;i<blist.length;i++){
+			$("#search_address ul").append("<li>"+blist[i].cityname+"</li>");
+			if(request['location']==blist[i].id){
+				$("#search_address ul li").eq(i).addClass("current_select");
+			}
+		}
+	}
+
+	function getKeyWord(){
+		$word=$("#search_content").val();
+		return $word;
+	}
+
+	function getCondition(index){
+		if(request['condition']==null){
+			request['condition']=index;
+		}else{
+			if(request['condition'].indexOf(index)==-1){
+				if(request['condition']!="") index="-"+index;
+				request['condition']+=index;
+				// console.log(request['condition']);
+			}else{
+				if(request['condition'].indexOf(index)==0&&request['condition'].indexOf("-")!=-1) index=index+"-";
+				else if(request['condition'].indexOf(index)!=0)index="-"+index;
+				// console.log(request['condition'].length);
+				request['condition'] = request["condition"].replace(index,"");
+				// request['condition'] = request['condition'].replace(index, "");
+			}
+		}
+		URLHref();
+	}
+
+//注意：导航 依赖 element 模块，否则无法进行功能性操作
+layui.use('element', function(){
+  var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+  
+});
+
+layui.use(['laypage', 'layer'], function(){
+	var laypage = layui.laypage
+	,layer = layui.layer;
+	
+  //总页数大于页码总数
+  laypage.render({
+  	elem: 'demo1'
+  	,theme: '#e2c48d'
+  	,curr: request['p']==""? 1: request['p']
+    ,count:  house_list.total_num//数据总数
+    ,limit:2
+    ,jump: function(obj,first){
+    	console.log(obj.curr);
+    	request['p']=obj.curr;
+    	if(!first){
+    		URLHref();
+    	}
+    }
+});
+});
+
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.ajax({
+			url:"/HouseR/Home/rent/get_message",
+			success:function(data){
+				if(data!="0") $("#dot").show();
+			}
+		});
+	});
+</script>
+</html>

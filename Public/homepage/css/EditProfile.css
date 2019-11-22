@@ -1,0 +1,76 @@
+@charset "utf-8";
+body,html{
+	margin:0px ;
+    padding:0px;
+	background-size: contain;
+}
+.bd{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+
+}
+.bd .main{
+	width:480px;
+	height: 480px;
+	margin-top:100px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	border: 0px solid green;
+}
+.bd .EPform{
+
+}
+.bd form{
+	
+}
+.bd .row{
+	width:480px;
+	line-height: 34px;
+	border: 0px solid green;
+	margin-left: 0px;
+
+}
+.bd .row .label{
+	float: left;
+	width:100px;
+	color: #000;
+	line-height: 34px;
+	margin-left: 0px;
+	text-align: right;
+}
+.bd .row .input{
+	float: left;
+	line-height: 34px;
+	margin-left: 20px;
+}
+.bd .image{
+	margin-top:10px;
+	margin-left:70px;
+}
+.bd .error{
+	margin-left: 110px;
+}
+.bd .EDbutton{
+	margin-left: 0px;
+	width:480px;
+}
+.bd .btn1{
+	margin-left: 0px;
+	width:100px;
+		float: left;
+}
+#btn1{
+	margin-left: 120px;
+}
+span{
+	font-size: 10px;
+	color:red;
+}
+.bd .change_password{
+	margin-left: 134px;
+	float: left;	
+}

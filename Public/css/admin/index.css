@@ -1,0 +1,62 @@
+html,body{
+	margin: 0px;
+	padding: 0px;
+	color: #000000;
+	cursor: default;
+}
+dd dt{
+	line-height: 0px!important;
+}
+ul li{
+	list-style-type: none;
+	padding: 0px;
+}
+.bd{
+	margin: 50px auto;
+	width: 80%;
+}
+.layui-form-item{
+	/*width: 50%;*/
+}
+.f_left{
+	float: left;
+}
+.f_df div{
+	float: left;
+	margin: 0px;
+}
+.f_df label{
+	float: left;
+	margin: 0px;
+}
+.uploadImg{
+	outline: none;
+	border: 0px solid;
+}
+.file {
+    position: relative;
+    display: inline-block;
+    background: #009688;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #d6ffff;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 30px;
+    height: 30px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.file:hover {
+    text-decoration: none;
+    opacity: .8;
+    color: #fff;
+}

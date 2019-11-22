@@ -1,0 +1,120 @@
+@charset "utf-8";
+body,html{
+	margin:0px ;
+    padding:0px;
+    cursor: default;
+}
+img{
+	height:140px;
+	width:140px;
+	margin-top:20px;
+	margin-left:48px;
+}
+.bd{
+	position:absolute;
+	
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background-color:#EEEEEE;
+}
+
+.header{
+	font-size: 14px;
+	height:64px;
+	padding-left:20px;
+	margin:10px;
+	background-color:#393d49;
+	border:0px solid red;
+	margin-left:250px;
+	line-height:64px;
+	cursor: default;
+	border-radius: 3px;
+}
+.header div{
+	float: left;
+}
+.header a{
+    color: #FFFFFF!important;
+	cursor: pointer;
+	float: right;
+	font-size: 14px;
+	text-decoration: none!important;
+}
+.header a:hover{
+	color: red;	
+}
+.left{
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	margin:10px;
+	width:230px;
+	background-color:#393d49;
+	border-radius: 3px;
+}
+.bd .left .user{
+	text-align: center;
+	font-size:19px;
+    color: #FFFFFF!important;
+}
+.left ul li {
+	line-height:40px;
+	font-size:17px;
+	text-align:center;
+	color: black;
+}
+ a{
+    color: #FFFFFF!important;
+}
+.left .person{
+	margin-bottom:40px;
+}
+.content{
+	position:absolute;
+	left:240px;
+	top:75px;
+	right:0px;
+	bottom:0px;
+	margin:10px;
+	background-color:white;
+}
+.jjj a{
+	background-color: orange!important;
+	color:#fff!important;
+}
+.left a:hover{
+	background-color: orange!important;
+}
+.header a:hover{
+    color: orange!important;
+    text-shadow: 0px 4px 11px white;
+}
+
+.breath_c{
+	 /* IE10、Firefox and Opera，IE9以及更早的版本不支持 */
+    animation-name: breath;                         /* 动画名称 */
+    animation-duration: 5s;                         /* 动画时长3秒 */
+    animation-timing-function: ease-in-out;         /* 动画速度曲线：以低速开始和结束 */
+    animation-iteration-count: infinite;            /* 播放次数：无限 */
+ 
+    /* Safari and Chrome */
+    -webkit-animation-name: breath;                 /* 动画名称 */
+    -webkit-animation-duration: 5s;                 /* 动画时长3秒 */
+    -webkit-animation-timing-function: ease-in-out; /* 动画速度曲线：以低速开始和结束 */
+    -webkit-animation-iteration-count: infinite;    /* 播放次数：无限 */
+}
+
+@keyframes breath {
+    from { opacity: 0.9; }                          /* 动画开始时的不透明度 */
+    50%  { opacity:   1; }                          /* 动画50% 时的不透明度 */
+    to   { opacity: 0.9; }                          /* 动画结束时的不透明度 */    
+}
+ 
+@-webkit-keyframes breath {
+    from { opacity: 0.9; }                          /* 动画开始时的不透明度 */
+    50%  { opacity:   1; }                          /* 动画50% 时的不透明度 */
+    to   { opacity: 0.9; }                          /* 动画结束时的不透明度 */
+}
